@@ -20,8 +20,8 @@
 
 <body>
 
+    <!-- header section -->
     <header>
-        <!-- header section -->
         <section class="header-section">
             <div class="container-fluid">
                 <div class="row">
@@ -39,12 +39,139 @@
         </section>
     </header>
 
+    <!-- main section -->
     <main>
-        <!--  -->
-        <section>
 
+        <!-- selection section -->
+        <section class="selection-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9">
+                        <div class="row g-4">
+                            <div class="col-4">
+                                <div class="custom-card">
+                                    <img src="./images/messi.png" alt="image of messi" class="card-image">
+                                    <h4 class="text-center text-white fw-bold my-4">Lionel Messi</h4>
+                                    <div class="text-center">
+                                        <button type="button" class="select-btn">Select</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="custom-card">
+                                    <img src="./images/neymar.png" alt="image of neymar" class="card-image">
+                                    <h4 class="text-center text-white fw-bold my-4">Neymar Jr</h4>
+                                    <div class="text-center">
+                                        <button type="button" class="select-btn">Select</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-4">
+                                <div class="custom-card">
+                                    <img src="./images/mbappe.png" alt="image of mbappe" class="card-image">
+                                    <h4 class="text-center text-white fw-bold my-4">Kylian Mbappe</h4>
+                                    <div class="text-center">
+                                        <button type="button" class="select-btn">Select</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="custom-card">
+                                    <img src="./images/vitor-machado.png" alt="image of vitor machado" class="card-image">
+                                    <h4 class="text-center text-white fw-bold my-4">Vitor Machado</h4>
+                                    <div class="text-center">
+                                        <button type="button" class="select-btn">Select</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="custom-card">
+                                    <img src="./images/sergio-ramos.png" alt="image of sergio ramos" class="card-image">
+                                    <h4 class="text-center text-white fw-bold my-4">Sergio Ramos</h4>
+                                    <div class="text-center">
+                                        <button type="button" class="select-btn">Select</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="custom-card">
+                                    <img src="./images/renato-sanches.png" alt="image of renato sanches" class="card-image">
+                                    <h4 class="text-center text-white fw-bold my-4">Renato Sanches</h4>
+                                    <div class="text-center">
+                                        <button type="button" class="select-btn">Select</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="selected-five-field text-white py-5 px-2 mb-4">
+                                    <h4 class="text-center mb-5">Selected-Five</h4>
+                                    <ol class="pb-5">
+                                        <li>one</li>
+                                        <li>one</li>
+                                        <li>one</li>
+                                        <li>one</li>
+                                        <li>one</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="calculation-field text-white py-5 px-4">
+                                    <h4 class="text-center mb-5">Budget</h4>
+
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <label for="per-player-field" class="label">Per Player</label>
+                                        <input id="per-player-field" type="text" class="input-field">
+                                    </div>
+
+                                    <button type="button" class="calculate-btn">Calculate</button>
+
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="player-expenses-text">Player Expenses</span>
+                                        <span>$<span>5000</span></span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <label for="manager-field" class="label">Manager</label>
+                                        <input id="manager-field" type="text" class="input-field">
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <label for="coach-field" class="label">Coach</label>
+                                        <input id="coach-field" type="text" class="input-field">
+                                    </div>
+
+                                    <button type="button" class="calculate-total-btn">Calculate Total</button>
+
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="player-expenses-text">Total</span>
+                                        <span class="final-total-amount">$<span>5000</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
+    <!-- footer section -->
+    <footer>
+        <section class="footer-section">
+            <div>
+                <p>Copyright &copy; 2022 All Rights Reserved.</p>
+            </div>
+        </section>
+    </footer>
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>

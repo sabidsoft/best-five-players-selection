@@ -20,6 +20,7 @@ body{
     color: #FF5E19;
     font-weight: 400;
     font-size: 76px;
+    margin-bottom: 28px;
 }
 
 .header-subtitle{
@@ -27,4 +28,87 @@ body{
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
+}
+
+/* selection section */
+.selection-section{
+    background-color: #151515;
+    padding: 80px 0;
+}
+
+.custom-card{
+    border: 1px solid #434343;
+}
+
+.card-image{
+    width: 100%;
+}
+
+.select-btn{
+    background-color: #015196;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 80px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.selected-five-field{
+    background-color: #000;
+}
+
+.calculation-field{
+    background-color: #000;
+}
+
+.input-field{
+    width: 130px;
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+.label{
+    color: #AFAFAF;
+}
+
+.calculate-btn{
+    width: 100%;
+    color: #fff;
+    background-color: #015196;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.player-expenses-text{
+    color: #AFAFAF;
+}
+
+.calculate-total-btn{
+    width: 100%;
+    color: #fff;
+    background-color: #015196;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.final-total-amount{
+    color: #FF5E19;
+}
+
+/* footer section */
+.footer-section{
+    border-top: 1px solid #717171;
+    background-color: #151515;
+    padding: 40px 0;
+}
+
+.footer-section p{
+    color: #fff;
+    text-align: center;
+    margin: 0;
 }
