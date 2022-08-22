@@ -1,21 +1,26 @@
 document.getElementById('calculate-btn').addEventListener('click', function(){
-    const inputElement = document.getElementById('per-player-field')
-    const inputString = inputElement.value
-    const inputNumber = parseFloat(inputString)
+    // get per player cost
+    const perPlayerCostElement = document.getElementById('per-player-field')
+    const perPlayerCostString = perPlayerCostElement.value
+    const perPlayerCost = parseFloat(perPlayerCostString)
 
-    if(inputString === ''){
+    // check empty input field
+    if(perPlayerCostString === ''){
         return alert('Please enter per player cost!')
     }
 
-    if(isNaN(inputNumber)){
-        return alert('Please enter number!')
+    // check data type
+    if(isNaN(perPlayerCost)){
+        return alert('Please enter number inside per player expense input field!')
     }
 
+    // check 5 players selected or not
     const selectedPlayers = document.getElementById('selected-players')
     if(selectedPlayers.childNodes.length !== 5){
         return alert('Please select 5 players!')
     }
 
+    // calculate player expense
     const playerExpensesElement = document.getElementById('player-expenses')
-    playerExpensesElement.innerText = inputNumber * 5
+    playerExpensesElement.innerText = perPlayerCost * 5
 })
