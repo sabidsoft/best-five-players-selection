@@ -29,7 +29,7 @@
                     <div class="col-6 text-center">
                         <h1 class="header-title">Best Five Players Selection</h1>
                         <p class="header-subtitle">
-                            You can select your best five player to make a football team. You can calculate their total expenses.
+                            You can select your best five players to make a football team. You can calculate their total expenses.
                             Also you can calculate total expenses for manager, coach and five players. You can easily select your best five players and calculate their expenses.
                         </p>
                     </div>
@@ -53,7 +53,7 @@
                                     <img src="./images/messi.png" alt="image of messi" class="card-image">
                                     <h4 class="text-center text-white fw-bold my-4">Lionel Messi</h4>
                                     <div class="text-center">
-                                        <button type="button" class="select-btn">Select</button>
+                                        <button id="messi" type="button" class="select-btn">Select</button>
                                     </div>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@
                                     <img src="./images/neymar.png" alt="image of neymar" class="card-image">
                                     <h4 class="text-center text-white fw-bold my-4">Neymar Jr</h4>
                                     <div class="text-center">
-                                        <button type="button" class="select-btn">Select</button>
+                                        <button id="neymar" type="button" class="select-btn">Select</button>
                                     </div>
                                 </div>
                             </div>
@@ -73,7 +73,7 @@
                                     <img src="./images/mbappe.png" alt="image of mbappe" class="card-image">
                                     <h4 class="text-center text-white fw-bold my-4">Kylian Mbappe</h4>
                                     <div class="text-center">
-                                        <button type="button" class="select-btn">Select</button>
+                                        <button id="mbappe" type="button" class="select-btn">Select</button>
                                     </div>
                                 </div>
                             </div>
@@ -83,7 +83,7 @@
                                     <img src="./images/vitor-machado.png" alt="image of vitor machado" class="card-image">
                                     <h4 class="text-center text-white fw-bold my-4">Vitor Machado</h4>
                                     <div class="text-center">
-                                        <button type="button" class="select-btn">Select</button>
+                                        <button id="machado" type="button" class="select-btn">Select</button>
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +93,7 @@
                                     <img src="./images/sergio-ramos.png" alt="image of sergio ramos" class="card-image">
                                     <h4 class="text-center text-white fw-bold my-4">Sergio Ramos</h4>
                                     <div class="text-center">
-                                        <button type="button" class="select-btn">Select</button>
+                                        <button id="ramos" type="button" class="select-btn">Select</button>
                                     </div>
                                 </div>
                             </div>
@@ -103,27 +103,28 @@
                                     <img src="./images/renato-sanches.png" alt="image of renato sanches" class="card-image">
                                     <h4 class="text-center text-white fw-bold my-4">Renato Sanches</h4>
                                     <div class="text-center">
-                                        <button type="button" class="select-btn">Select</button>
+                                        <button id="sanches" type="button" class="select-btn">Select</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-3">
                         <div class="row">
                             <div class="col-12">
-                                <div class="selected-five-field text-white py-5 px-2 mb-4">
+
+                                <!-- selected five area -->
+                                <div class="selected-five text-white py-5 px-2 mb-4">
                                     <h4 class="text-center mb-5">Selected-Five</h4>
-                                    <ol class="pb-5">
-                                        <li>one</li>
-                                        <li>one</li>
-                                        <li>one</li>
-                                        <li>one</li>
-                                        <li>one</li>
-                                    </ol>
+                                    <p id="selection-msg" class="text-center text-muted">No one selected yet</p>
+                                    <ol id="selected-players"></ol>
                                 </div>
                             </div>
+                            
                             <div class="col-12">
+                                
+                                <!-- budget area -->
                                 <div class="calculation-field text-white py-5 px-4">
                                     <h4 class="text-center mb-5">Budget</h4>
 
@@ -175,5 +176,9 @@
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="./js/utilities.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
