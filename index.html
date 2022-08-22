@@ -15,7 +15,6 @@
 
     <!-- vanilla css -->
     <link rel="stylesheet" href="./styles/style.css">
-
 </head>
 
 <body>
@@ -113,8 +112,6 @@
                     <div class="col-3">
                         <div class="row">
                             <div class="col-12">
-
-                                <!-- selected five area -->
                                 <div class="selected-five text-white py-5 px-2 mb-4">
                                     <h4 class="text-center mb-5">Selected-Five</h4>
                                     <p id="selection-msg" class="text-center text-muted">No one selected yet</p>
@@ -123,8 +120,6 @@
                             </div>
                             
                             <div class="col-12">
-                                
-                                <!-- budget area -->
                                 <div class="calculation-field text-white py-5 px-4">
                                     <h4 class="text-center mb-5">Budget</h4>
 
@@ -133,11 +128,11 @@
                                         <input id="per-player-field" type="text" class="input-field">
                                     </div>
 
-                                    <button type="button" class="calculate-btn">Calculate</button>
+                                    <button id="calculate-btn" type="button" class="calculate-btn">Calculate</button>
 
                                     <div class="d-flex justify-content-between align-items-center mb-3">
                                         <span class="player-expenses-text">Player Expenses</span>
-                                        <span>$<span>5000</span></span>
+                                        <span>$<span id="player-expenses">00</span></span>
                                     </div>
 
                                     <div class="d-flex justify-content-between align-items-center mb-3">
@@ -150,11 +145,11 @@
                                         <input id="coach-field" type="text" class="input-field">
                                     </div>
 
-                                    <button type="button" class="calculate-total-btn">Calculate Total</button>
+                                    <button id="calculate-total-btn" type="button" class="calculate-total-btn">Calculate Total</button>
 
                                     <div class="d-flex justify-content-between align-items-center mb-3">
                                         <span class="player-expenses-text">Total</span>
-                                        <span class="final-total-amount">$<span>5000</span></span>
+                                        <span class="final-total-amount">$<span id="total">00</span></span>
                                     </div>
                                 </div>
                             </div>
@@ -179,6 +174,7 @@
 
     <!-- custom js -->
     <script src="./js/utilities.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/select-player.js"></script>
+    <script src="./js/player-expense.js"></script>
 </body>
 </html>
