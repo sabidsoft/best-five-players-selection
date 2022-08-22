@@ -11,6 +11,22 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
     const coachExpenseString = coachExpenseElement.value
     const coachExpenseNumber = parseFloat(coachExpenseString)
 
+    if(managerExpenseString === ''){
+        return alert('Please enter manager cost!')
+    }
+
+    if(isNaN(managerExpenseNumber)){
+        return alert('Please enter number!')
+    }
+
+    if(coachExpenseString === ''){
+        return alert('Please enter coach cost!')
+    }
+
+    if(isNaN(coachExpenseNumber)){
+        return alert('Please enter number!')
+    }
+
     const totalElement = document.getElementById('total')
     totalElement.innerText = playerExpensesNumber + managerExpenseNumber + coachExpenseNumber
 })
