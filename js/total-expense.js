@@ -14,14 +14,14 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
     const coachExpenseString = coachExpenseElement.value
     const coachExpenseNumber = parseFloat(coachExpenseString)
 
-    // check calculate player expenses
-    if(playerExpensesString === '00'){
-        return alert('Please calculate player expenses before calculate total!')
-    }
-
     // check empty input field 
     if(managerExpenseString === ''){
-        return alert('Please enter manager cost!')
+        return alert('Please enter manager expense!')
+    }
+
+    // check negative number
+    if(managerExpenseNumber < 0){
+        return alert("Manager expense can't be negative number!")
     }
 
     // check number or not
@@ -31,7 +31,12 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
 
     // check empty input field 
     if(coachExpenseString === ''){
-        return alert('Please enter coach cost!')
+        return alert('Please enter coach expense!')
+    }
+
+    // check negative number
+    if(coachExpenseNumber < 0){
+        return alert("Coach expense can't be negative number!")
     }
 
     // check number or not
