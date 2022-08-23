@@ -19,13 +19,8 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
         return alert('Please enter number inside per player input field!')
     }
 
-    // check anyone selected or not
-    const selectedPlayers = document.getElementById('selected-players')
-    if(selectedPlayers.childNodes.length === 0){
-        return alert('You have not selected any player. Please select at least one player!')
-    }
-
     // calculate players expenses
     const playerExpensesElement = document.getElementById('player-expenses')
+    const selectedPlayers = document.getElementById('selected-players')
     playerExpensesElement.innerText = perPlayerCost * selectedPlayers.childNodes.length
 })
